@@ -69,7 +69,7 @@ accountant = st.text_input("Please list your accountant and attorney of the comp
 accountLoc = st.text_input("Where are the accounts maintained? ")
 problems = st.text_area("Is there any material, criminal, civil or administrative proceedings pending or threatened against the firm or any of its principals, or have there ever been any such matters? If yes, please provide full details: ")
 otherInv = st.text_area("Do any of the firm’s principles have other business involvement? If yes, describe and quantify how much of their professional time is dedicated to each. ")
-CRF = st.select("Is your company looking to be included in the Caribbean Resilience Fund (CRF)? ", ['Yes','No'])
+CRF = st.selectbox("Is your company looking to be included in the Caribbean Resilience Fund (CRF)? ", ['Yes','No'])
 													 
 if CRF is not None:
 	st.write(CRF)
