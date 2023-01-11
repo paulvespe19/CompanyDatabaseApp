@@ -71,7 +71,7 @@ problems = st.text_area("Is there any material, criminal, civil or administrativ
 otherInv = st.text_area("Do any of the firm’s principles have other business involvement? If yes, describe and quantify how much of their professional time is dedicated to each. ")
 CRF = st.selectbox("Is your company looking to be included in the Caribbean Resilience Fund (CRF)? ", ['Yes','No'])
 													 
-if CRF is not None:
+if CRF is 'Yes':
 	st.write(CRF)
 													 
 
