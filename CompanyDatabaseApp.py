@@ -38,7 +38,7 @@ regAuth = st.text_area("What regulatory authority is the company registered with
 affil = st.text_area("List any affiliations, directorships and memberships of the company and/or its principals: ")
 
 # Upload 
-st.subheader("Please upload")
+st.write("Please upload")
 
 
 
