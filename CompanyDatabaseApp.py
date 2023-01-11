@@ -8,6 +8,7 @@ st.title("Company Database Platform")
 
 
 # Company Information
+st.header("Company Information")
 
 companyName = st.text_input("Company Name: ") 
 address = st.text_input("Address: ")
@@ -19,6 +20,7 @@ contactInfo = st.text_input("Please include telephone and email information of c
 
 
 # Organization
+st.header("Organization Information")
 
 history = st.text_input("Please give a brief history of the company:")
 entity = st.text_input("Legal entity type: ")
@@ -35,7 +37,8 @@ branch = st.text_area("Branch offices or other locations, if any. What functions
 regAuth = st.text_area("What regulatory authority is the company registered with? Include: type, date of registration, and whether all of the employees are registered with the same authority? ")
 affil = st.text_area("List any affiliations, directorships and memberships of the company and/or its principals: ")
 
-
-
-
 # Upload 
+
+
+
+
