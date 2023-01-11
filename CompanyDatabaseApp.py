@@ -54,9 +54,27 @@ if image_file is not None:
    filetype = image_file.type
    filesize = image_file.size
    st.write(filename)
-   st.write(filetype)
-   st.write(filesize)
 
    # To View Uploaded Image
    st.image(load_image(image_file),width=250)
+
+
+# Complicane
+st.header("Compliance Information")
+
+comp = st.text_input("Who is responsible for compliance? ")
+coi = st.text_area("Please describe any current or potential conflict of interest: ")
+relationAffect = st.text_area("Does the firm or directors have any relationship which may affect its business activities? ")
+accountant = st.text_input("Please list your accountant and attorney of the company: ")
+accountLoc = st.text_input("Where are the accounts maintained? ")
+problems = st.text_area("Is there any material, criminal, civil or administrative proceedings pending or threatened against the firm or any of its principals, or have there ever been any such matters? If yes, please provide full details: ")
+otherInv = st.text_area("Do any of the firm’s principles have other business involvement? If yes, describe and quantify how much of their professional time is dedicated to each. ")
+CRF = st.multiselect("Is your company looking to be included in the Caribbean Resilience Fund (CRF)? ", ['Yes','No'])
+													 
+if CRF is not None:
+	st.write(CRF)
+													 
+
+
+
 
