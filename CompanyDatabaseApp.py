@@ -70,11 +70,22 @@ accountLoc = st.text_input("Where are the accounts maintained? ")
 problems = st.text_area("Is there any material, criminal, civil or administrative proceedings pending or threatened against the firm or any of its principals, or have there ever been any such matters? If yes, please provide full details: ")
 otherInv = st.text_area("Do any of the firm’s principles have other business involvement? If yes, describe and quantify how much of their professional time is dedicated to each. ")
 CRF = st.selectbox("Is your company looking to be included in the Caribbean Resilience Fund (CRF)? ", ['Yes','No'])
-													 
+	
+# CRF companys
 if CRF is 'Yes':
-	st.write(CRF)
-													 
-
+	st.header("CRF Fund Questionnaire")
+	fundraising = st.text_input("Amount of total fundraising: ")
+	request = st.text_input("Request investment amount: ")
+	debt_equity = st.text_input("Debt/Equity")
+	proceeds = st.text_input("Proceeds of funds: ")
+	strat = st.text_area("Strategy/Exectution")
+	duns = st.text_input("D-U-N-S Number")
+	dnb = st.text_input("Dun and Bradstreet (DnB)- Business Credit Report or Credit Score: ")
+	tax = st.text_input("Date of last tax filing")
+	st.write("Please upload supported tax filings: ")
+	tax_file = st.file_uploader("Upload Tax Filings ", type=["png","jpg","jpeg","pdf"])
+	proof = st.text_area("(CRF) Please include income revenues/income/loss for the following: Most recent year, 1 year ago, 2 years ago")
+	
 
 
 
