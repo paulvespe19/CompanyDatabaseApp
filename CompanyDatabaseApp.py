@@ -85,6 +85,27 @@ if CRF is 'Yes':
 	st.write("Please upload supported tax filings: ")
 	tax_file = st.file_uploader("Upload Tax Filings ", type=["png","jpg","jpeg","pdf"])
 	proof = st.text_area("(CRF) Please include income revenues/income/loss for the following: Most recent year, 1 year ago, 2 years ago")
+
+if CRF is 'No':
+	
+	st.header("Non-CRF Fund Questionnaire")
+	project = st.text_input("Total Project Amount:")
+	request = st.text_input("Requested loan amount:")
+	duns = st.text_input("D-U-N-S Number")
+	dnb = st.text_input("Dun and Bradstreet (DnB)- Business Credit Report or Credit Score: ")
+	proof = st.text_area("(CRF) Please include income revenues/income/loss for the following: Most recent year, 1 year ago, 2 years ago")
+	st.write("Please upload supported tax filings: ")
+	tax_file = st.file_uploader("Upload Tax Filings ", type=["png","jpg","jpeg","pdf"])
+
+if CRF:
+	ref = st.text_area("Please include a list of references, including: name, phone, title, email, and company.")
+	sign = st.text_input("By signing, you are confirming the information provided is accurate (provide name and date)")
+	
+	
+	
+	
+	
+	
 	
 
 
