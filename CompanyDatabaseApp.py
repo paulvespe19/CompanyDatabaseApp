@@ -98,6 +98,7 @@ if CRF is 'No':
 	tax_file = st.file_uploader("Upload Tax Filings ", type=["png","jpg","jpeg","pdf"])
 
 if CRF:
+	st.header("References")
 	ref = st.text_area("Please include a list of references, including: name, phone, title, email, and company.")
 	sign = st.text_input("By signing, you are confirming the information provided is accurate (provide name and date)")
 	
