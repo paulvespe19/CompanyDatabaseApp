@@ -113,7 +113,7 @@ DETA_KEY = "b0ule4p2_FwrGLzHJ5tKzooz4kXaXggWf71NBbwaV"
 
 deta = Deta(DETA_KEY)
 
-db = deta.Base("Company Database")
+db = deta.Base("Company_Database")
 
 def insert(companyName,address,telephone):
     return db.put({"key":companyName,"Address":address,"Phone":telephone})
