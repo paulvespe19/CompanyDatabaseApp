@@ -103,9 +103,22 @@ if CRF:
 	sign = st.text_input("By signing, you are confirming the information provided is accurate (provide name and date)")
 	
 	
+# Deta testing 
+
+from deta import Deta
+
+DETA_KEY = "b0ule4p2_FwrGLzHJ5tKzooz4kXaXggWf71NBbwaV"
+
+# Initialize database object 
+
+deta = Deta(DETA_KEY)
+
+db = deta.Base("Company Database")
+
+def insert(companyName,address,telephone):
+    return db.put({"key":companyName,"Address":address,"Phone":telephone})
 	
-	
-	
+insert(companyName,address,telephone)
 	
 	
 
